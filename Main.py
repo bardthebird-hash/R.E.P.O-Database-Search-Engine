@@ -8,7 +8,7 @@ init(autoreset=True)
 # 1. CONNECT
 gc = gspread.service_account(filename='credentials.json')
 # Use your specific Sheet ID from the URL
-sh = gc.open_by_key("10j6fMk5HsNXDyhbqJT66-zm67JDhgyJcMB1Wz05DBzU")
+sh = gc.open_by_key("SHEET ID")
 
 # 2. THE "UNIVERSAL" LOADER
 # This dictionary will hold everything. 
@@ -75,7 +75,7 @@ def search_in_category(category_name, data_list):
             print('-' * 30)
 
     if not found_match:
-            print('Could not find anything matching {target} in {category_name}')
+            print(f'Could not find anything matching {target} in {category_name}')
 
 while True:
 
